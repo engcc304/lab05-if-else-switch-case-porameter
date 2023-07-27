@@ -37,39 +37,29 @@
 
 int main() {
 
-     float score;
-     
-    printf ( " Enter score : " ) ;
-    scanf( "%f" , & score ) ;
-     
-        if ( score >= 80 ) {
-        printf ( "\n Grade : A (Excellent)!" ) ;
-    }
-            else if ( score >= 75 ) {
-            printf ( "\n Grade : B+ (Very Good)!" ) ;
-    }
-                else if ( score >= 70 ) {
-                printf ( "\n Grade : B (Good)!" ) ;
-    }
-                    else if ( score >= 65 ) {
-                    printf ( "\n Grade : C+ (Fairly Good)!" ) ;
-    }
-                        else if ( score >= 60 ) {
-                        printf ( "\n Grade : C (Fair)!" ) ;
-    }
-                            else if ( score >= 55 ) {
-                            printf ( "\n Grade : D+ (Poor)!" ) ;
-    }
-                                else if ( score >= 50 ) {
-                                printf ( "\n Grade : D (Very Poor)!" ) ;
-    }
-                                    else if ( !score ) {
-                                    printf ( "Please enter number only" ) ;
-    }                            
-                                        else {
-                                        printf ( "\n Grade : F (Fail)!" ) ;
+    int score = 0 ;
+    printf ( "enter score :\n" ) ;
+    scanf ( "%d", &score ) ;
+
+    if( score >= 80 ) {
+        printf ( "A !" ) ;
+        } else if ( score >= 75 && score < 80 ) {
+          printf ( "B+ !" ) ;
+    }       else if ( score >= 70 && score < 75 ) {
+            printf ( "B !" ) ;
+    }           else if ( score >= 65 && score < 70 ) { 
+                printf ( "C+ !")  ;
+    }               else if ( score >= 60 && score < 65 ) {
+                     printf ("C !") ;
+    }                   else if ( score >= 55 && score < 60 ) {
+                        printf ( "D+ !" ) ;
+    }                       else if ( score >= 50 && score < 55 ) {
+                            printf ( "D !" ) ;
+    }                           else if ( !score ) {
+                                printf ( "please enter number only." ) ;
+    }                               else {
+                                    printf ( "F !" ) ;
     }
 
-  
     return 0 ;
 }//end main function
