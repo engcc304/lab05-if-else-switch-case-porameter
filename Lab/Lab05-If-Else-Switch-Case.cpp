@@ -69,7 +69,7 @@ int main() {
                                         else {
                                         printf ( "\n Grade : F (Fail)!" ) ;
     }
-   
+
   
     return 0 ;
 }//end main function
